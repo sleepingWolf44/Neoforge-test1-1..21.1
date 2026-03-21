@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+      "down": "sleepingtestmod:block/end_tnt_bottom",
+      "top": "sleepingtestmod:block/end_tnt_top",
+      "side": "sleepingtestmod:block/end_tnt_side"
+
+  }
+}

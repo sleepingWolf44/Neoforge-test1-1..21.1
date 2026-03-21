@@ -1,5 +1,6 @@
 package net.sleepingwolf.testmod;
 
+import net.sleepingwolf.testmod.block.ModBlocks;
 import net.sleepingwolf.testmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -32,6 +33,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static net.sleepingwolf.testmod.item.ModItems.DUCK;
+import static net.sleepingwolf.testmod.item.ModItems.KILL_SWORD;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TestMod.MODID)
@@ -52,9 +54,11 @@ public class TestMod {
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
+
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -68,8 +72,12 @@ public class TestMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept((ModItems.DUCK));
+            event.accept((ModItems.KILL_SWORD));
+        }
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
+            event.accept((ModBlocks.END_TNT));
         }
     }
 
