@@ -19,7 +19,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> END_TNT = registerBlock("end_tnt",
             ()-> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.1f).lightLevel(state -> 4).sound(SoundType.HONEY_BLOCK).friction(1.50f)));
+                    .strength(0.1f).lightLevel(state -> 4).sound(SoundType.HONEY_BLOCK).friction(2.50f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
