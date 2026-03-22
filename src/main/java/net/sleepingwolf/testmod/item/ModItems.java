@@ -1,15 +1,11 @@
 package net.sleepingwolf.testmod.item;
 
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sleepingwolf.testmod.TestMod;
-import net.minecraft.world.item.SwordItem;
 
 public class ModItems {
 

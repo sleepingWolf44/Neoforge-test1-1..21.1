@@ -2,5 +2,8 @@
   "item.sleepingtestmod.rubberduck": "Rubber Duck",
   "item.sleepingtestmod.kill_sword": "Kill Sword",
 
-  "block.sleepingtestmod.end_tnt": "End TNT"
+  "block.sleepingtestmod.end_tnt": "End TNT",
+  "block.sleepingtestmod.duck_block": "DUCK!!!",
+
+  "creativetab.testmod.test_items": "Sleeping test tab"
 }

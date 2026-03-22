@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+      "particle": "sleepingtestmod:block/duckside",
+      "up": "sleepingtestmod:block/ducktop",
+      "down": "sleepingtestmod:block/ducktop",
+      "north": "sleepingtestmod:block/duckface",
+      "south": "sleepingtestmod:block/duckback",
+      "west": "sleepingtestmod:block/duckside",
+      "east": "sleepingtestmod:block/duckside"
+
+  }
+}

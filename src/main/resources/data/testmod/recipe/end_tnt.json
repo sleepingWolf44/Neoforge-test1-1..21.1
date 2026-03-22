@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"item": "minecraft:end_stone"},
+    {"item": "minecraft:tnt"}
+  ],
+  "result": {
+    "id": "sleepingtestmod:end_tnt","count": 1
+  }
+}
